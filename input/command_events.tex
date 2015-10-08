@@ -1,0 +1,212 @@
+% Seite 4
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programmpunkte hier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dieser Befehl fügt für einen Monat eine Veranstaltungsseite mit maximal 6 Veranstaltungen ein. 
+% #1 Seitentitel, Monatsname
+% #2 Veranstaltung 1
+% #3 Veranstaltung 2
+% #4 Veranstaltung 3
+% #5 Veranstaltung 4
+% #6 Veranstaltung 5
+% #7 Veranstaltung 6
+
+\newcommand \neuerMonat[1] {
+	\newpage
+	\pagestyle{plain}
+	\pageTitle{#1}
+	\fontsize{\defaultFontSize}{\defaultLineSpacing} \selectfont
+}
+
+% Dieser Befehl fügt eine Veranstaltung ein. Technisch werden hier entsprechende tabularx-Zeilen erzeugt. Zeile wird in \neuerMonat eingebaut.
+% #1 Wochentag: {Mo, Di, Mi, Do, Fr, Sa, So} - ohne Punkt!
+% #2 Datum des Tages: 01 - 31
+% #3 Uhrzeit: {ab HH, HH Uhr, bis TT} - lose, strenge Zeitangabe, oder ganztätig bis TT.
+% #4 Veranstaltungsart: {Kommers, Kneipe, Brunch, ...}
+% #5 Veranstaltugnsmotto wird in kursiv geschrieben
+% #6 Veranstaltungsort: {\adH} oder Kürzel. 
+% #7 - leer. War mal: Veranstaltungsverantwortliche Status Bierspitz, zb. F Filius
+\newcommand \neueVeranstaltung[7]{
+	\begin{tabularx}{1\textwidth}{p{2.8cm} X}
+	#1. #2. & \textbf{#4}, \emph{ #6 } \\
+	#3      & \emph{{#5}} \\
+            & \\ % #7)} \\
+	\end{tabularx}
+}
+
+\newcommand \neueLeereVeranstaltung {}
+
+\newcommand \neueAnkuendigung[3] {
+	\null
+	\vfill
+	\begin{tabularx}{\textwidth}{||Xp{15cm}X||}
+		\hhline{|t:===:t|}    
+		&&\\  
+		& \centering{#1}&\\ 
+		&&\\  
+		& \centering{\textbf{#2}}&\\  
+		&&\\  
+		& \centering{\emph{#3}}&\\
+		&&\\    
+		\hhline{|b:===:b|}
+	\end{tabularx}	
+}
+
+\newcommand \neuerHinweis [2]{
+	\null
+	\vfill
+	\begin{tabularx}{\textwidth}{||X p{15cm} X||}
+		\hhline{|t:===:t|} 
+		&&\\
+		& \centering{\emph{#1}} &\\ 
+		&&\\
+		& \centering{\emph{\textbf{#2}}} &\\
+		&&\\
+		\hhline{|b:===:b|} 
+	\end{tabularx}
+}
+
+%%% Seiten-Definition
+% @param #1 : "blank-page" (keinen Header), "\defaultPageStyle" (mit Header)
+% @param #2 : Zentrierte Seite? "\true" | "\false"
+% @param #3 : Schriftgröße "\defaultFontSize" (16pt) | z.B. "12" (12pt)
+% @param #4 : Zeilenabstand "\defaultLineSpacing" (24pt) | z.B. "18" (18pt)
+% @param #5 : Titel der Seite
+% @param #6 : Inhalt der Seite
+\newcommand \addPage[6] {
+	
+	\pagestyle{#1} % blank-page (keinen Header), plain (mit Header)
+	
+	\pageTitle{#5} % Text im Header
+	
+	\ifthenelse{#2}{ % if (zentriert)
+		\begin{center}
+		}{} % else
+		
+		\fontsize{#3}{#4} \selectfont
+		
+		%%% Seiteninhalt
+		%%
+		%
+		#6
+		%
+		%%
+		%%%
+		
+		\ifthenelse{#2}{ % if (zentriert)
+		\end{center}
+	}{} % else
+	
+	%	\pagestyle{\noHeader}
+	\newpage
+	
+} 
+
+\newcommand \addEventPage[2] {
+	
+	\addPage
+	{\defaultPageStyle}
+	{\false}
+	{\defaultFontSize}
+	{\defaultLineSpacing}
+	{#1}
+	{#2}
+	
+}
+
+\newcommand \eventTable[6] {
+	
+	\begin{tabularx}{1\textwidth}{p{1.8cm} p{2.2cm} X }	
+		#1
+		#2
+		#3
+		#4
+		#5
+		#6	
+	\end{tabularx}
+}
+
+\newcommand \eventTableWithTwoCols[6] {
+	
+	\begin{tabularx}{1\textwidth}{p{4.35cm}	X }	
+		#1
+		#2
+		#3
+		#4
+		#5
+		#6	
+	\end{tabularx}
+}
+
+\newcommand \eventRow[3] {
+	#1 & #2	& #3\\
+	& &\\
+}
+
+\newcommand \eventRowWithTwoCols[2] {
+	#1 & #2\\
+	&\\
+}
+
+\newcommand \emptyRow {
+	& &\\
+}
+
+\newcommand \eventDamen {
+	\includegraphics[width=0.74cm]{\neueVeranstaltungsStatusB}
+}
+
+\newcommand \eventAbendgardrobe{
+	\includegraphics[width=0.74cm]{\neueVeranstaltungsStatusA}
+}
+
+\newcommand \eventDateCol[4] {
+	{#1. #2.} %\ifthenelse{#3}{\eventDamen}{}\ifthenelse{#4}{\eventAbendgardrobe}{} 
+}
+
+\newcommand \eventIntervalCol[6] {
+	{#1. #2. -- #3. #4}\ifthenelse{#5}{\eventDamen}{}\ifthenelse{#6}{\eventAbendgardrobe}{} 
+}
+
+\newcommand \eventTimeCol[3] {
+	#1 #2 #3
+}
+
+\newcommand \eventDescriptionCol[4] {
+	\textbf{#1} #2 \programmZitat{#3}{#4}
+}
+
+\newcommand \eventBox[3] {
+	
+	\begin{tabularx}{\textwidth}{||XcX||}
+		\hhline{|t:===:t|}    
+		&															&\\  
+		& #1														&\\ 
+		&															&\\  
+		& \textbf{#2} 												&\\  
+		&															&\\  
+		& \emph{#3} 												&\\
+		&															&\\    
+		\hhline{|b:===:b|}
+	\end{tabularx}
+	
+}
+
+\newcommand \eventBoxBottom[3] {
+	\null
+	\vfill
+	\begin{tabularx}{\textwidth}{||XcX||}
+		\hhline{|t:===:t|}    
+		&															&\\  
+		& #1														&\\ 
+		&															&\\  
+		& \textbf{#2} 												&\\  
+		&															&\\  
+		& \emph{#3} 												&\\
+		&															&\\    
+		\hhline{|b:===:b|}
+	\end{tabularx}
+	
+}

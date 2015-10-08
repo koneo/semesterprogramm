@@ -1,0 +1,33 @@
+\newcommand \defaultPageStyle {plain}
+\newcommand \defaultFontSize {24}
+\newcommand \defaultLineSpacing {28}
+\newcommand \noHeader {blank-page}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{}
+\fancyhead[RE,LO]{{\fontsize{36}{24} \selectfont \textbf{\leftmark}}}
+\fancyfoot{}
+%\fancyfoot[RE,LO]{{\fontsize{16}{24} \selectfont \thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyhead{}
+	\fancyhead[RE,LO]{{\fontsize{25}{24} \selectfont \textbf{\leftmark}}}
+	\fancyfoot{}
+	%\fancyfoot[RE,LO]{{\fontsize{16}{24} \selectfont \thepage}}
+	\renewcommand{\headrulewidth}{1pt}
+}
+\fancypagestyle{\noHeader}{
+	\fancyhf{}
+	\fancyhead{} 
+	\fancyfoot{} 
+	\renewcommand{\headrulewidth}{0pt}
+}
+\newcommand \pageTitle[1]{
+	%\section*{#1}
+	\markboth{#1}{}
+	\addcontentsline{toc}{section}{#1}
+}
+
+\setlength{\parindent}{0pt}

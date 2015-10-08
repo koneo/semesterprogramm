@@ -1,0 +1,21 @@
+% This is the first page. It is intended to show the logo and display name and date.
+
+% Coverseite mit Wappen
+
+%\frontmatter % turns off chapter numbering and uses roman numerals for page numbers;
+
+%%% Seiten-Definition
+% @param #1 : "blank-page" (keinen Header), "\defaultPageStyle" (mit Header)
+% @param #2 : Zentrierte Seite? "\true" | "\false"
+% @param #3 : Schriftgröße "\defaultFontSize" (16pt) | z.B. "12" (12pt)
+% @param #4 : Zeilenabstand "\defaultLineSpacing" (24pt) | z.B. "18" (18pt)
+% @param #5 : Titel der Seite
+% @param #6 : Inhalt der Seite
+
+	\addPage
+	{\noHeader}
+	{\true}
+	{\defaultFontSize}
+	{\defaultLineSpacing}
+	{}
+	{\cover}	
