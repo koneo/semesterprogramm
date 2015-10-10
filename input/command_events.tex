@@ -6,12 +6,6 @@
 
 % Dieser Befehl fügt für einen Monat eine Veranstaltungsseite mit maximal 6 Veranstaltungen ein. 
 % #1 Seitentitel, Monatsname
-% #2 Veranstaltung 1
-% #3 Veranstaltung 2
-% #4 Veranstaltung 3
-% #5 Veranstaltung 4
-% #6 Veranstaltung 5
-% #7 Veranstaltung 6
 
 \newcommand \neuerMonat[1] {
 	\newpage
@@ -28,15 +22,26 @@
 % #5 Veranstaltugnsmotto wird in kursiv geschrieben
 % #6 Veranstaltungsort: {\adH} oder Kürzel. 
 % #7 - leer. War mal: Veranstaltungsverantwortliche Status Bierspitz, zb. F Filius
-\newcommand \neueVeranstaltung[7]{
+\newcommand \neueVeranstaltung[6]{
 	\begin{tabularx}{1\textwidth}{p{2.8cm} X}
-	#1. #2. & \textbf{#4}, \emph{ #6 } \\
-	#3      & \emph{{#5}} \\
-            & \\ % #7)} \\
+	#1. #2. & \textbf{#4} \emph{{#5}} \\
+	#3      & \emph{{#6}} \\
+            & \\ % #7)} \\ 
 	\end{tabularx}
 }
 
 \newcommand \neueLeereVeranstaltung {}
+
+%% beispiel
+%\neuerHinweis
+%{Die Aktivitas wünscht}
+%{Frohe Weihnachten und Alles Gute im neuen Jahr}
+
+%	{\neueAnkuendigung
+%		{Die Aktivitas wünscht}
+%		{Viel Erfolg in der Prüfungsphase}
+%		{}
+%	}
 
 \newcommand \neueAnkuendigung[3] {
 	\null

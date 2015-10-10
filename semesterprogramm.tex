@@ -14,6 +14,7 @@
 \input{input/variable_broshure}
 \input{input/variable_layout}
 \input{input/variable_cover}
+\input{input/variable_invite}
 \input{input/variable_contact}
 \input{input/variable_etc}
 \input{input/command_events}
@@ -21,100 +22,135 @@
 
 \begin{document}
 
-\input{input/page_cover} % Page 1: Coverpage including logo.
-\input{input/page_invite} % Page 2: Invitation.
-\input{input/page_intro} % Page 3: Introduction
+\input{input/page_cover}   % Page 1: Coverpage including logo.
+\input{input/page_invite}  % Page 2: Invitation.
+\input{input/page_intro}   % Page 3: Introduction
 \input{input/page_contact} % Page 4: Contacts
 
 % Four pages, four months 
 	
-\neuerMonat{Oktober}
-	{ \neueVeranstaltung
-	{Fr}{02}{bis 05.}
-		{75. Wingolfsseminar}{\enquote{Erster Teil}}
-		{CJD Bonn}{}}
-	{\neueVeranstaltung
-		{Sa}{10}{ab 10}
-		{Oktoberbrunch}{\enquote{Türkisch Kochen und Essen}}
-		{\adH}{}}
-	{\neueVeranstaltung
-		{Sa}{17}{20 Uhr}
-		{Kommers}{\enquote{Semesterantritt}}
-		{\adH}{}}
-	{\neueVeranstaltung
-		{Di}{20}{ab 19}
-		{Spieleabend}{}
-		{\adH}{}}
-	{\neueVeranstaltung
-		{Do}{29}{ab 21}
+\neuerMonat{April}
+% Listen updaten: 
+%Mängel am Haus, Couleur usw.
+% Umfrage Aktivitas
+	\neueVeranstaltung 
+		{Fr}{01}{ab 19}
+		{Fahne setzen}{}
+		{\adH}
+	\neueVeranstaltung 
+		{Do}{07}{ab 21}
 		{Sieghüttenparty}{}
-		{\adH}{}}
-	
-\neuerMonat {November}
-	{\neueVeranstaltung
-		{Do}{05}{ab 19}
-		{Bowlen}{}
-		{Bowlingarena}{}}
-	{\neueVeranstaltung
-		{Fr}{13}{bis 16.}
-		{75. Wingolfsseminar}{\enquote{Zweiter Teil}}
-		{CJD Bonn}{}}
-	{\neueVeranstaltung
-		{Fr}{20}{bis 22.}
-		{Conventswochende}{mit Hausbau und Brunch}
-		{\adH}{}}
-	{\neueVeranstaltung
-		{Sa}{28}{20 Uhr}
-		{Kommers}{\enquote{Nikolauskommers}}
-		{St. Bonifatius}{}}
-	{\neueLeereVeranstaltung}
-	{\neueAnkuendigung
-		{Vorträge angekündigt:}
-		{Pastor Giro, AH Higgens \enquote{Insides Into UK Politics}, AH Leon \enquote{Aus der Unternehmensberatung}}
-		{(\adH)}
-	}
-	
-\neuerMonat{Dezember}
-	{\neueVeranstaltung
-		{Sa}{05}{bis 06.}
-		{Conventswochenende}{Vorträge zu unseren Prinzipien}
-		{\adH}{}}
-	{\neueVeranstaltung
-		{Sa}{07}{ab 9}
-		{Winterwanderung}{Ab zum Kindelsberg}
-		{\adH}{}}
-	{\neueVeranstaltung
-		{Fr}{18}{20 Uhr}
-		{Feuerzangenbowle}{Feuer und Film}
-		{\adH}{}}
-	{\neueLeereVeranstaltung}
-	{\neueLeereVeranstaltung}
-	{\neuerHinweis
-		{Die Aktivitas wünscht}
-		{Frohe Weihnachten und Alles Gute im neuen Jahr}
-	}
-	
-\neuerMonat{Januar}
-	{\neueVeranstaltung
-		{Do}{14}{ab 21}
-		{Sieghüttenparty}{}
-		{\adH}{}}
-	{\neueVeranstaltung
+		{\adH}
+	\neueVeranstaltung
+		{Di}{12}{ab 20}
+		{Bowling Abend}{} 
+		{Bowling-Center}
+	\neueVeranstaltung
+		{Do}{14}{ab 20}
+		{Dart Abend}{}
+		{Gaststätte Harr}
+	\neueVeranstaltung
 		{Di}{19}{ab 19}
-		{Billard und Dart}{Bull's Eye}
-		{Golden Crown}{}}
-	{\neueVeranstaltung
+		{Workshop}{\adH}
+		{Kryptographie in deinem Alltag}
+	\neueVeranstaltung
+		{Do}{21}{ab 20}
+		{Vortrag}{Bundestagsabgeordneten}
+		{\adH}
+	\neueVeranstaltung
 		{Sa}{23}{20 Uhr}
-		{Kneipe}{Alt-Herren, Tradition und Philister}
-		{\adH}{}}
+		{Kommers}{Semesterantritt}
+		{\adH}
+	\neueVeranstaltung
+		{Do}{28}{bis 3.5.}
+		{Walpurgisnacht}{}
+		{Arminia Dorpatensis, Tartu}
+		%Billig Flüge unter 100 EUR
+	
+\neuerMonat {Mai}
+% Drei Tage wach boot camp?
+% Tag der Arbeit : Sonntag, 01.05.2016
+% Christi Himmelfahrt : Donnerstag, 05.05.2016
+% Pfingstmontag : Montag, 16.05.2016
+% Fronleichnam : Donnerstag, 26.05.2016
+% Semesterbeginn 01. April 2016
+% Semesterende 30. September 2016
+% Vorlesungszeiten 11. April 2016 - 22. Juli 2016
+% Vorlesungsfreie Tage Pfingsten 13. Mai 2016 - 17. 	 Mai 2016
+% {\neueVeranstaltung
+%		{Fr}{27}{ab 10}
+%		{Conventswochende}{Hausbau, Brunch}
+%		{\adH}{}}
+	\neueVeranstaltung
+		{Di}{03}{20 Uhr}
+		{Ökumenischer Abend}{}
+		{\adH}
 	{\neueVeranstaltung
-		{Sa}{30}{20 Uhr}
+		{Sa}{??}{20 Uhr}
+		{Stiftungsfest}{}
+		{}
+	\neueVeranstaltung
+		{Sa}{28}{20 Uhr}
+		{Vortrag}{Insight into UK Politics}
+		{AH Higgens}
+	\neueVeranstaltung
+		{Sa}{28}{20 Uhr}
+		{Aktivendinner}{}
+		{\adH}
+	\neueVeranstaltung
+		{Sa}{28}{20 Uhr}
+		{AltHerren Besuch}{}
+		{\adH}
+	\neueVeranstaltung
+		{Sa}{28}{20 Uhr}
+		{Grillen mit Geflüchteten}{}
+		{\adH}
+	\neueVeranstaltung
+		{Sa}{28}{20 Uhr}
+		{Zorros Vortrag}{}
+		{\adH}
+	
+\neuerMonat{Juni}
+	\neueVeranstaltung
+		{Do}{21}{ab 20}
+		{Vortrag}{Bundestagsabgeordneten}
+		{\adH}
+	\neueVeranstaltung
+		{Fr}{23}{20 Uhr}
+		{Kneipe}{Leos Bierversprechen}
+		{\adH}
+	\neueVeranstaltung
+		{Sa}{05}{bis 06.}
+		{Conventswochenende}{}
+		{\adH}
+	\neueVeranstaltung
+		{Sa}{07}{ab 9}
+		{Wanderung}{}
+		{\adH}
+	
+\neuerMonat{Juli}
+	\neueVeranstaltung
+		{Do}{07}{ab 21}
+		{Sieghüttenparty}{}
+		{\adH}
+	\neueVeranstaltung
+		{Di}{11}{ab 19}
+		{Billard Abend}{}
+		{Golden Crown}
+	\neueVeranstaltung
+		{Do}{14}{ab 19}
+		{Paintball}{}
+		{Sportcenter Wilhelmshöhe}
+	\neueVeranstaltung
+		{Do}{21}{ab 20}
+		{Vortrag}{Bundestagsabgeordnete}
+		{\adH}
+	\neueVeranstaltung
+		{Sa}{23}{20 Uhr}
 		{Kommers}{Semesterex}
-		{\adH}{}}
-	{\neueLeereVeranstaltung}
-	{\neueAnkuendigung
-		{Sonntag, den 14.02. ab 18:}
-		{AHV-Gründerstammtisch mit Grillen}
-		{(\adH)}
-		}
+		{\adH}
+	\neueVeranstaltung
+		{So}{31}{20 Uhr}
+		{Fahne einholen}{}
+		{\adH}
 \end{document}
