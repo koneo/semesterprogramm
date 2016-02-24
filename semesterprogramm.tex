@@ -6,151 +6,20 @@
 % @firstautor Andre Lehnert, contact@andre-lehnert.de
 % @firstversion 0.1
 
-\documentclass[10pt,a4paper, twoside]{book}
+\documentclass[twoside]{book}
 
-\input{input/packages}
-\input{input/variable_semester}
-\input{input/variable_corporation}
-\input{input/variable_broshure}
-\input{input/variable_layout}
-\input{input/variable_cover}
-\input{input/variable_invite}
-\input{input/variable_contact}
-\input{input/variable_etc}
-\input{input/command_events}
-%\input{input/page_legend}
+\input{input/000_packages}
+\input{input/010_layout} % In dieser Datei definierst du dasLayout!
+\input{input/020_customize} % In dieser Datei definierst du Texte!
 
 \begin{document}
 
-\input{input/page_cover}   % Page 1: Coverpage including logo.
-\input{input/page_invite}  % Page 2: Invitation.
-\input{input/page_intro}   % Page 3: Introduction
-\input{input/page_contact} % Page 4: Contacts
+% Die Seiten sind in eigenen Dateien ausgelagert. Sie werden in der notwendigen Reiheinfolge eingehängt.
+\input{input/1_cover} 			% Seite 1: Coverseite
+\input{input/2_einladung}		% Seite 2: Einladetext
+\input{input/3_beschreibung}	% Seite 3: Beschreibung
+\input{input/4_kontakt}			% Seite 4: Kontakt
+\input{input/5_veranstaltungen}	% Seite 5: Veranstaltungen
+%\input{input/6_notizen}			% Seite 6: Notizen
 
-% Four pages, four months 
-	
-\neuerMonat{April}
-% Listen updaten: 
-%Mängel am Haus, Couleur usw.
-% Umfrage Aktivitas
-	\neueVeranstaltung 
-		{Fr}{01}{ab 19}
-		{Fahne setzen}{}
-		{\adH}
-	\neueVeranstaltung 
-		{Do}{07}{ab 21}
-		{Sieghüttenparty}{}
-		{\adH}
-	\neueVeranstaltung
-		{Di}{12}{ab 20}
-		{Bowling Abend}{} 
-		{Bowling-Center}
-	\neueVeranstaltung
-		{Do}{14}{ab 20}
-		{Dart Abend}{}
-		{Gaststätte Harr}
-	\neueVeranstaltung
-		{Di}{19}{ab 19}
-		{Workshop}{\adH}
-		{Kryptographie in deinem Alltag}
-	\neueVeranstaltung
-		{Do}{21}{ab 20}
-		{Vortrag}{Bundestagsabgeordneten}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{23}{20 Uhr}
-		{Kommers}{Semesterantritt}
-		{\adH}
-	\neueVeranstaltung
-		{Do}{28}{bis 3.5.}
-		{Walpurgisnacht}{}
-		{Arminia Dorpatensis, Tartu}
-		%Billig Flüge unter 100 EUR
-	
-\neuerMonat {Mai}
-% Drei Tage wach boot camp?
-% Tag der Arbeit : Sonntag, 01.05.2016
-% Christi Himmelfahrt : Donnerstag, 05.05.2016
-% Pfingstmontag : Montag, 16.05.2016
-% Fronleichnam : Donnerstag, 26.05.2016
-% Semesterbeginn 01. April 2016
-% Semesterende 30. September 2016
-% Vorlesungszeiten 11. April 2016 - 22. Juli 2016
-% Vorlesungsfreie Tage Pfingsten 13. Mai 2016 - 17. 	 Mai 2016
-% {\neueVeranstaltung
-%		{Fr}{27}{ab 10}
-%		{Conventswochende}{Hausbau, Brunch}
-%		{\adH}{}}
-	\neueVeranstaltung
-		{Di}{03}{20 Uhr}
-		{Ökumenischer Abend}{}
-		{\adH}
-	{\neueVeranstaltung
-		{Sa}{??}{20 Uhr}
-		{Stiftungsfest}{}
-		{}
-	\neueVeranstaltung
-		{Sa}{28}{20 Uhr}
-		{Vortrag}{Insight into UK Politics}
-		{AH Higgens}
-	\neueVeranstaltung
-		{Sa}{28}{20 Uhr}
-		{Aktivendinner}{}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{28}{20 Uhr}
-		{AltHerren Besuch}{}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{28}{20 Uhr}
-		{Grillen mit Geflüchteten}{}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{28}{20 Uhr}
-		{Zorros Vortrag}{}
-		{\adH}
-	
-\neuerMonat{Juni}
-	\neueVeranstaltung
-		{Do}{21}{ab 20}
-		{Vortrag}{Bundestagsabgeordneten}
-		{\adH}
-	\neueVeranstaltung
-		{Fr}{23}{20 Uhr}
-		{Kneipe}{Leos Bierversprechen}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{05}{bis 06.}
-		{Conventswochenende}{}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{07}{ab 9}
-		{Wanderung}{}
-		{\adH}
-	
-\neuerMonat{Juli}
-	\neueVeranstaltung
-		{Do}{07}{ab 21}
-		{Sieghüttenparty}{}
-		{\adH}
-	\neueVeranstaltung
-		{Di}{11}{ab 19}
-		{Billard Abend}{}
-		{Golden Crown}
-	\neueVeranstaltung
-		{Do}{14}{ab 19}
-		{Paintball}{}
-		{Sportcenter Wilhelmshöhe}
-	\neueVeranstaltung
-		{Do}{21}{ab 20}
-		{Vortrag}{Bundestagsabgeordnete}
-		{\adH}
-	\neueVeranstaltung
-		{Sa}{23}{20 Uhr}
-		{Kommers}{Semesterex}
-		{\adH}
-	\neueVeranstaltung
-		{So}{31}{20 Uhr}
-		{Fahne einholen}{}
-		{\adH}
 \end{document}
