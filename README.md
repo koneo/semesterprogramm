@@ -31,4 +31,6 @@ Die Vorlage ist aus verschiedenen Projekten zusammengestellt, um schnell ein Sem
 =======
 # semesterprogramm
 Semesterprogramme der CDStV Nibelungen zu Siegen im Wingolfsbund
->>>>>>> 6c28739e9de5a1e7934068bbc00d8d3ee4b4d1ff
+
+TODO: 
+ * Schrift mit exportieren für bessere Druckqualität: "... in den gelieferten Daten sind keinerlei Vektoren bzw. Schriftelemente mehr vorhanden. Sicher gibt es aber eine Einstellung beim PDF-Export oder den Voreinstellungen die festlegt, wie die Daten verarbeitet werden."
