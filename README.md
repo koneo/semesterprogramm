@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# semesterprogramm_ws_2015_16
+# semesterprogramm
 
 # Version 0.1
 Quelle ist https://github.com/andre-lehnert/latex-brochure
@@ -28,9 +27,7 @@ Die Vorlage ist aus verschiedenen Projekten zusammengestellt, um schnell ein Sem
  - Ankündigungen und Hervorhebungen
  - Kontaktdaten-Formatierung
  - Kontodaten-Formatierung
-=======
-# semesterprogramm
-Semesterprogramme der CDStV Nibelungen zu Siegen im Wingolfsbund
 
 TODO: 
+
  * Schrift mit exportieren für bessere Druckqualität: "... in den gelieferten Daten sind keinerlei Vektoren bzw. Schriftelemente mehr vorhanden. Sicher gibt es aber eine Einstellung beim PDF-Export oder den Voreinstellungen die festlegt, wie die Daten verarbeitet werden."
