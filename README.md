@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # semesterprogramm_ws_2015_16
 
 # Version 0.1
@@ -27,3 +28,7 @@ Die Vorlage ist aus verschiedenen Projekten zusammengestellt, um schnell ein Sem
  - Ankündigungen und Hervorhebungen
  - Kontaktdaten-Formatierung
  - Kontodaten-Formatierung
+=======
+# semesterprogramm
+Semesterprogramme der CDStV Nibelungen zu Siegen im Wingolfsbund
+>>>>>>> 6c28739e9de5a1e7934068bbc00d8d3ee4b4d1ff

@@ -1,0 +1,27 @@
+% koneo 2016-02-22
+%
+% Coverseite mit Wappen
+% 
+% Hier wird die erste Seite erstellt. Es ist die Coverseite mit Wappen. Die Variabeln werden in 020_customize gesetzt
+ 
+% Layouten der Seite
+
+\newcommand \lersteSeite {
+		
+		\gorga \\
+		{\fontsize {\gsgL}{\dls} \selectfont \gorgb} \\
+		\gorgc \\	
+		\includegraphics[width=0.85\textwidth]{\glogo}
+		{\fontsize {\gsgL}{\dls} \selectfont \gsempro} \\
+		\gsem \\
+		\gcsem\\
+		
+}
+
+% Erstellen der Seite
+
+\neueSeite
+	{\ohneKopzeile}
+	{\zentriert}
+	{\ohneTitel}
+	{\lersteSeite}	
