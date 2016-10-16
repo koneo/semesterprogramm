@@ -1,10 +1,13 @@
 # semesterprogramm
 
-# Version 0.1
-Quelle ist https://github.com/andre-lehnert/latex-brochure
-Latex Vorlage für eine zweiseitige Broschüre (Semesterprogramm).
 
-Die Vorlage ist aus verschiedenen Projekten zusammengestellt, um schnell ein Semesterprogramm erstellen zu können.
+# Version 0.4 2016-10-16
+Semesterprogramm Wintersemester 2016/2017 fertig. Schrift und Wappen vekorisiert.
+
+# Version 0.3
+# Version 0.2
+# Version 0.1
+Quelle ist https://github.com/andre-lehnert/latex-brochure. Latex Vorlage für eine zweiseitige Broschüre (Semesterprogramm). Die Vorlage ist aus verschiedenen Projekten zusammengestellt, um schnell ein Semesterprogramm erstellen zu können.
 
 ## Latex-Konfiguration
  - DIN A4, zweiseitige Broschüre
@@ -28,6 +31,3 @@ Die Vorlage ist aus verschiedenen Projekten zusammengestellt, um schnell ein Sem
  - Kontaktdaten-Formatierung
  - Kontodaten-Formatierung
 
-TODO: 
-
- * Schrift mit exportieren für bessere Druckqualität: "... in den gelieferten Daten sind keinerlei Vektoren bzw. Schriftelemente mehr vorhanden. Sicher gibt es aber eine Einstellung beim PDF-Export oder den Voreinstellungen die festlegt, wie die Daten verarbeitet werden."

@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Definition des Layouts 2016-02-22 Koneo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Packages
+%
+
+\usepackage[top=0.4cm,
+bottom=0.4cm,
+inner=0.4cm,
+outer=0.4cm,
+paperwidth=74mm, %a7paper
+paperheight=105mm %a7paper
+]{geometry} %a7paper
+\usepackage{fontspec}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage{lastpage}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage{floatrow}
+\usepackage{caption}
+\captionsetup{labelformat=empty, labelsep=none}
+\usepackage{changepage}
+\usepackage{csvsimple}
+\usepackage{tabularx, hhline} %tabelle auf textbreite
+\usepackage{xcolor}
+\usepackage{dcolumn}
+\usepackage{tabu}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{xfrac}
+\usepackage{csquotes}
+\usepackage{epstopdf} % cred to http://dirkraffel.com/2007/11/19/include-eps-files-in-latex/
+\setlength {\voffset}       {26pt}
+\setlength {\headheight}    {15pt}
+\setlength {\headsep}       {4pt}
+\setlength {\textheight}    {262pt}
+\fboxrule=1.5pt
+\fboxsep=1.5pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Textbausteine
+
+% Seite 1 (Wappen)
+\newcommand \gsempro{Semesterprogramm}
+\newcommand \gcsem{111. Couleursemester}
+\newcommand \gorga{Christlich Deutsche Studentenverbindung}
+\newcommand \gorgb{Nibelungen zu Siegen}
+\newcommand \gorgc{im Wingolfsbund}
+\newcommand \gsem{Wintersemester 2016/2017}
+% Seite 2
+\newcommand \gzweiteSeiteTitel {Einladung und Vorstellung}
+\newcommand \gzweiteSeite {
+	Die Aktivitas der Nibelungen zu Siegen gibt sich die Ehre, dieses Semesterprogramm ihren Kommilitonen, verehrten Gästen und lieben Bundesbrüdern zu überreichen. Es dient auch als herzliche und offizielle Einladung.\\
+	\\
+	Wir sind Studenten aus allen Fachbereichen und halten während des Studiums und darüber\, hinaus\,\, gemeinschaftlich\, zusammen\, und unterstützen und fördern uns gegenseitig. Dieses Semesterprogramm zeigt, dass wir uns über das Studium hinaus\, zur frei\-heitlich demokratischen Grundordnung und den christlichen Werten bekennen und aktiv leben.\\
+	\\
+	Jeder ist eingeladen unser guter Gast zu sein. Auch Sie -- auch Du.
+	\vfill
+	Alle Veranstaltungen finden auf dem Verbindungshaus statt, falls nicht anders notiert. Für die Teilnahme an Kneipen bitten wir um kurze Anmeldung - gerne auch per Mail.
+	}
+% Seite 3
+\newcommand \gdritteSeiteTitel {Konstante und Wingolfsbund}
+\newcommand \gdritteSeite {
+	Mittelpunkt unserer Aktivitäten ist unsere Konstante: Das geräumige \enquote{Haus der Nibelungen}, Sieghütter Hauptweg 110, mit 13 WG-Zimmern,\, Gemeinschaftsräumen\, und Festsaal. Dort leben, lernen und feiern wir zusammen, schließen und pflegen Freundschaften für das Leben. Professoren halten bei\, uns\, Vorträge, Absolventen berichten von ihren Berufserfahrungen, ältere Studenten helfen den Jüngeren und Freunde aus aller Welt schauen gerne vorbei.\\
+	35 Verbindungen in deutschen, estnischen und\,\,\, österreichischen\,\, Uni\-versitätsstädten\, bilden den Wingolfsbund. Wir pflegen gegenseitige Besuche, gemeinsame Veranstaltungen,  Fortbildungen und kehren ein auf Zwischenreise\, oder\, für\, Kurzurlaube.\, Die Gründ\-ung des Bundes im frühen 19. Jahrhundert\, dient\, dem\, Erhalt\, studentischer Tradition,\,\, demokratischer\, Ideale,\, christlicher\,\, Werte und gemeinschaftlicher Lebensweise.\\
+	\\
+	Diese Weltanschauung pflegen wir auch in Siegen.
+}
+% Seite 4
+\newcommand \gvierteSeiteTitel {Kontaktdaten}
+\newcommand \gvierteSeite {
+	\textbf{CDStV Nibelungen zu Siegen\\im Wingolfsbund}\\
+    Haus der Nibelungen\\
+	Sieghütter Hauptweg 110\\
+	D-57072 Siegen \\
+	+49 (0) 271 -- 770 218 6\\
+	kontakt@nibelungen-siegen.de\\
+	www.nibelungen-siegen.de\\
+    www.facebook.com/nibelungensiegen\\
+	\\
+	\textbf{Für die Aktivitas}\\
+	Christopher Eifler \vulgo Filius\\
+	+49 (0) 157 -- 772 057 47\\
+	filius@nibelungen-siegen.de\\
+	\\
+	\textbf{Für den Alt-Herren-Verband\\und den BV 21}\\
+	Detlef Roggenkamp \vulgo Robo\\
+	robo@nibelungen-siegen.de\\
+	\\
+	\textbf{Für den Wingolfsbund}\\
+	Geschäftsführer Wilhelm Neusel\\
+	gfdw@wingolf.org\\
+	www.wingolf.org\\	
+} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Eigene Befehle
+
+\newcommand \gangle			{11}
+\newcommand \glogo			{wappen.eps}
+\newcommand \gsgL			{21}
+\newcommand \dfs            {10} 			% Default FontSize
+\newcommand \dheadrulewidth {1pt}
+\newcommand \dfsh			{12}
+\newcommand \dls			{10} 			% Default LineSpace
+\newcommand \ohneKopzeile   {blank-page} 	% "blank-page" (keinen Header),
+\newcommand \mitKopfzeile   {plain} 		% (mit Header)
+\newcommand \zentriert      {\boolean{true}}
+\newcommand \linksbuending  {\boolean{false}}
+\newcommand \ohneTitel      {}
+\newcommand \vulgo			{$^{v}\!\!$/ }
+\newcommand \gtw            {1.1cm}
+\setlength{\parindent}{0pt}
+\fancypagestyle{\ohneKopzeile}{
+	\fancyhf{}
+	\fancyhead{} 
+	\fancyfoot{} 
+	\renewcommand{\headrulewidth}{0pt}
+}
+\newcommand \seitenTitel[1]{
+	\markboth{#1}{}
+	\addcontentsline{toc}{section}{#1}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Die Veranstaltungen des Semesters
+%
+
+% #1 Monatsname
+\newcommand \Monat[1] {
+	\newpage
+	\pagestyle{\mitKopfzeile}
+	\seitenTitel{#1}
+	\fontsize{\dfs}{\dls} \selectfont
+}
+
+% #1 Wochentag und Datum
+% #2 Uhrzeit
+% #3 Ort
+% #4 Art: Sieghüttenparty
+\newcommand \WochentagDatumUhrzeitOrtArt[4]{
+	\begin{tabularx}{1\textwidth}{p{\gtw} X}
+	#1 & \textbf{#4} #2			\\
+								\\
+	\end{tabularx}
+}
+
+% #1 Wochentag und Datum
+% #2 Uhrzeit
+% #3 Ort
+% #4 Art
+% #5 Beschreibung
+\newcommand \WochentagdatumUhrzeitOrtArtBeschreibung[5]{
+	\begin{tabularx}{1\textwidth}{p{\gtw} X}
+	#1 	& \textbf{#4} #3			\\
+	#2	& #5						\\
+		&							\\
+	\end{tabularx}
+}
+
+% #1 Wochentag und Datum Mo. 14.
+% #2 Ort
+% #3 Art: Akademischer Abend
+% #4 Uhrzeit1
+% #5 Beschreibung1
+% #6 Uhrzeit2
+% #7 Beschreibung2
+\newcommand \WochentagdatumOrtArtUhrzeitABeschreibungAUhrzeitBBeschreibungB[7]{
+	\begin{tabularx}{1\textwidth}{p{\gtw} X}
+	#1      & \textbf{#3}	#2 	\\
+	#4		& #5 				\\
+    #6      & #7 				\\ 
+            &   				\\
+	\end{tabularx}
+}
+
+\newcommand \Ankuendigung[1] {
+\begin{center}
+\vfill
+\fbox{\begin{minipage}{15em}
+\begin{minipage}{15em}
+	\centering{#1}
+\end{minipage}
+\end{minipage}}
+\end{center}
+}
+
+%%% Seiten-Definition
+% #1: Kopfzeile
+% #2: Zentriert oder linksbündig
+% #3: Titel der Seite
+% #4: Inhalt der Seite
+\newcommand \neueSeite[4] {
+	\newpage	
+	\pagestyle{#1}							% Kopfzeile
+	\seitenTitel{#3}						% Seitentitel
+	\ifthenelse{#2}{\begin{center}}{}		% falls \zentiert,...
+		\fontsize{\dfs}{\dls} \selectfont	% ... sonst
+		#4									% Inhalt
+		\ifthenelse{#2}{\end{center}}{}		% falls \zentriert,...
+} 
+
+% Seite 1: Wappen
+\newcommand \lersteSeite {
+		\gorga \\
+		{\fontsize {\gsgL}{\dls} \selectfont \gorgb} \\
+		\gorgc \\	
+		\includegraphics[width=0.82\textwidth,angle=\gangle]{\glogo}
+		{\fontsize {\gsgL}{\dls} \selectfont \gsempro} \\
+		\gsem \\
+		\gcsem\\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Fancy
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyhead{}
+	\fancyhead[L]{{\fontsize{\dfsh}{\dls} \selectfont \textbf{\leftmark}}}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{\dheadrulewidth}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Zusammensetzen aller Seiten
+
+\begin{document}
+
+% Seite 1: Wappen
+\neueSeite
+	{\ohneKopzeile}
+	{\zentriert}
+	{\ohneTitel}
+	{\lersteSeite}
+	
+% Seite 2: Einladetext
+\neueSeite
+	{\mitKopfzeile}
+	{\linksbuending}
+	{\gzweiteSeiteTitel}
+	{\gzweiteSeite}
+	
+	
+% Seite 3: Beschreibung
+\neueSeite
+	{\mitKopfzeile}
+	{\linksbuending}
+	{\gdritteSeiteTitel}
+	{\gdritteSeite}
+		
+% Seite 4: Kontakt
+\neueSeite
+	{\mitKopfzeile}
+	{\linksbuending}
+	{\gvierteSeiteTitel}
+	{\gvierteSeite}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% @autor Koneo, Ref und Graph - CDStV Nibelungen zu Siegen im Wingolfsbund
+% @version 0.4
+% @date 2016-10-08
+%
+% @autor Sempro Komitee CDStV Nibelungen zu Siegen im Wingolfsbund
+% @version 0.3
+% @date 2016-07-19
+%
+% @autor koneo, koneo@nibelungen-siegen.de
+% @version 0.2
+% @date: 2015-10-08
+%
+% @firstautor Andre Lehnert, contact@andre-lehnert.de
+% @firstversion 0.1
