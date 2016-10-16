@@ -15,7 +15,7 @@ pdftk pg_0002.pdf pg_0001.pdf pg_0003.pdf pg_0004.pdf cat output tmp_A4_innen.pd
 pdfjam --quiet --landscape tmp_A4_innen.pdf --papersize '{111mm,295mm}' --nup 4x1  --outfile final_wirmachendruck_innen.pdf
 
 # Layouting for wingolfsplattform.org 
-pdftk pg_0001.pdf pg_0002.pdf pg_0003.pdf pg_0004.pdf cat output final_online_wingolfsplattform.pdf
+pdftk pg_0001.pdf pg_0002.pdf pg_0003.pdf pg_0004.pdf pg_0005.pdf pg_0006.pdf pg_0007.pdf pg_0008.pdf cat output final_online_wingolfsplattform.pdf
 
 # Layouting for "Do-It-Yourself"
 pdfjam --quiet --landscape tmp_A4_innen.pdf tmp_A4_aussen.pdf --paper A4paper --nup 4x2  --outfile final_online_diy.pdf
