@@ -1,5 +1,7 @@
 # semesterprogramm
 
+# Version 0.5 2017-02-26
+Semesterprogramm Sommersemester 2017 fertig. Mehr Hinweisfenster und Chargen ausgeschrieben. Korrekturen im Text.
 
 # Version 0.4 2016-10-16
 Semesterprogramm Wintersemester 2016/2017 fertig. Schrift und Wappen vekorisiert.
