@@ -1,1 +1,5 @@
 final_*
+*.aux
+*.log
+*.gz
+main.pdf
