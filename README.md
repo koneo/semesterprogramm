@@ -1,5 +1,10 @@
 # semesterprogramm
 
+## Version 0.8 2019-09-14
+- Chargen ohne traditionelle Studiengangbezeichnung
+- Convente und Hausbautag wieder aufgenommen
+- Gesellige Abende sind mindestens Stammtisch, wenn nicht anders geplant.
+
 ## Version 0.7 2018-03-12
  - \par für zeilenumbruch
 
