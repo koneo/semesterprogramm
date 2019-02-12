@@ -214,6 +214,16 @@ Mit gemeinsamen Veranstaltungen und gegenseitigen Besuchen pflegen wir das Bunde
 
 \newcommand \gvierteSeiteTitel {Kontaktdaten}
 
+
+% #1: Amt
+% #2: Vorname
+% #3: Nachname
+% #4: Bierspitz
+% #5: Studium
+\newcommand \gAmt[5]{
+	#1 #2 #3 \vulgo #4\\
+}
+
 \newcommand \gvierteSeite {
 	\textbf{CDStV Nibelungen zu Siegen\\im Wingolfsbund}\\
 	Haus der Nibelungen\\
@@ -226,14 +236,10 @@ Mit gemeinsamen Veranstaltungen und gegenseitigen Besuchen pflegen wir das Bunde
 	\vfill
 	\textbf{Chargen der Aktivitas}\\
 	\setlength\parindent{24pt}
-	x	Andreas Krischer \vulgo Pilgrim\\
-%	\par stud. rer. oec.\\
-	xx	Jassim Alberts \vulgo Smoker\\
-%	\par stud. phil.\\
-	xxx	David Psiuk \vulgo Kurt\\
-%	\par stud. rer. oec.\\
-	FM	Sven Cebulla \vulgo Adam\\
-%	\par stud. soc.
+	\gAmtX
+	\gAmtXX
+	\gAmtXXX
+	\gAmtFM
 	\setlength\parindent{0pt}
 	\vfill
 	\textbf{Für den Alt-Herren-Verband\\und den BV 21}\\
